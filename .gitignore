@@ -1,0 +1,29 @@
+# ide
+.idea/
+.vscode/
+
+# environment
+.env
+.venv
+.venv/
+venv/
+
+# directories
+build/
+dist/
+temp/
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.python-version
+
+# python-tooling
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# macOS
+.DS_Store
