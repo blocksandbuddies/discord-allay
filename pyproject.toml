@@ -1,0 +1,37 @@
+[build-system]
+requires = ["uv_build>=0.9.25,<0.10.0"]
+build-backend = "uv_build"
+
+[project]
+name = "allay"
+version = "0.1.0"
+description = "Blocks 'N Buddies Discord Bot"
+readme = { file = ".github/README.md", content-type = "text/markdown" }
+license = "MIT"
+license-files = ["LICEN[CS]E"]
+requires-python = ">=3.13"
+keywords = []
+classifiers = []
+authors = [
+    { name = "losing ticks" }
+]
+maintainers = [
+    { name = "losing ticks" }
+]
+dependencies = [
+    "discord-py>=2.6.4",
+    "python-dotenv>=1.1.1",
+]
+
+[project.urls]
+Home = "https://blocksandbuddies.com"
+Repository = "https://github.com/blocksandbuddies/discord-allay.git"
+Issues = "https://github.com/blocksandbuddies/discord-allay/issues"
+
+[project.scripts]
+allay = "allay.__main__:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.5",
+]
